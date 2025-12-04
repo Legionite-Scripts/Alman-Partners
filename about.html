@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Alman Partners Limited</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            primary: { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+            gold: { 400: '#facc15', 500: '#eab308', 600: '#ca8a04' },
+            navy: { 800: '#1e3a5f', 900: '#0f2744', 950: '#0a1929' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-gradient-to-br from-navy-800 to-primary-700 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">A</span>
+          </div>
+          <span class="text-xl font-bold text-navy-900">Alman Partners</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="about.html" class="text-navy-800 font-semibold transition">About</a>
+          <a href="services.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Services</a>
+          <a href="expertise.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Expertise</a>
+          <a href="milestones.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Milestones</a>
+          <a href="contact.html" class="bg-navy-800 text-white px-6 py-2.5 rounded-full hover:bg-navy-900 transition font-medium">Contact Us</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="about.html" class="block text-navy-800 font-semibold py-2">About</a>
+        <a href="services.html" class="block text-gray-600 hover:text-navy-800 py-2">Services</a>
+        <a href="expertise.html" class="block text-gray-600 hover:text-navy-800 py-2">Expertise</a>
+        <a href="milestones.html" class="block text-gray-600 hover:text-navy-800 py-2">Milestones</a>
+        <a href="contact.html" class="block bg-navy-800 text-white px-6 py-2.5 rounded-full text-center">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">About Us</span>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mt-3">
+        Your Trusted Partner
+      </h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
+            Investment Management Excellence
+          </h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            Alman Partners Limited is a seasoned investment management firm dedicated to delivering innovative, sustainable, and client-focused financial solutions.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            With a strong foundation built on integrity, expertise, and performance, we provide comprehensive portfolio and asset management services to individuals, institutions, and corporations seeking to grow, preserve, and optimize their wealth.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center p-6 bg-gray-50 rounded-2xl">
+              <div class="text-3xl font-bold text-navy-800">12+</div>
+              <div class="text-gray-500 text-sm mt-1">Years Experience</div>
+            </div>
+            <div class="text-center p-6 bg-gray-50 rounded-2xl">
+              <div class="text-3xl font-bold text-navy-800">₦2T+</div>
+              <div class="text-gray-500 text-sm mt-1">Volume Traded</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=800&q=80" alt="Professional team meeting" class="rounded-3xl shadow-2xl w-full">
+          <div class="absolute -bottom-6 -left-6 bg-navy-800 text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
+                <svg class="w-5 h-5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+              <span class="font-semibold">Top 3 Broker</span>
+            </div>
+            <p class="text-white/80 text-sm">Recognized by financial institutions as a top three broker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mt-3">
+          The Alman Advantage
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover transition-all duration-300 border border-gray-100">
+          <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Proven Expertise</h3>
+          <p class="text-gray-600">A team of seasoned investment professionals with deep market knowledge and industry experience.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover transition-all duration-300 border border-gray-100">
+          <div class="w-14 h-14 bg-gold-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Customized Solutions</h3>
+          <p class="text-gray-600">Strategies aligned with client goals, risk appetite, and long-term vision for optimal results.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover transition-all duration-300 border border-gray-100">
+          <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Global Perspective</h3>
+          <p class="text-gray-600">Access to international markets and diverse asset classes for comprehensive portfolio diversification.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover transition-all duration-300 border border-gray-100">
+          <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Commitment to Excellence</h3>
+          <p class="text-gray-600">Transparent, ethical, and performance-driven investment practices you can trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="py-20 lg:py-32 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="Abstract technology" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-navy-900/90"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Philosophy</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 mb-8">
+          Trust, Discipline & Long-Term Value Creation
+        </h2>
+        <p class="text-white/80 text-lg leading-relaxed mb-8">
+          At Alman Partners Limited, our philosophy is rooted in trust, discipline, and long-term value creation. We believe that successful investment management goes beyond returns — it is about building enduring partnerships with our clients, understanding their unique goals, and crafting strategies that align with their aspirations.
+        </p>
+        <p class="text-white/70 leading-relaxed">
+          We approach every portfolio with a balance of rigorous research, prudent risk management, and innovative thinking, ensuring that our clients are positioned to thrive in dynamic markets. By integrating global insights with local expertise, we deliver solutions that are both forward-looking and grounded in sustainable practices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div class="bg-gradient-to-br from-navy-800 to-navy-900 p-10 lg:p-12 rounded-3xl text-white">
+          <div class="w-16 h-16 bg-gold-500/20 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl lg:text-3xl font-bold mb-4">Vision Statement</h3>
+          <p class="text-white/80 text-lg leading-relaxed">
+            To be the trusted partner of choice in investment management, driving financial growth and stability for clients while contributing to economic development.
+          </p>
+        </div>
+        <div class="bg-gradient-to-br from-primary-600 to-primary-700 p-10 lg:p-12 rounded-3xl text-white">
+          <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl lg:text-3xl font-bold mb-4">Mission Statement</h3>
+          <p class="text-white/80 text-lg leading-relaxed">
+            To deliver superior investment returns, manage risk, and provide personalized service to our clients, while maintaining the highest standards of integrity and professionalism.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-20 lg:py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Our Foundation</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mt-3">
+          Core Values
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h4 class="font-bold text-navy-900 mb-2">Integrity</h4>
+          <p class="text-gray-600 text-sm">Upholding the highest ethical standards</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h4 class="font-bold text-navy-900 mb-2">Innovation</h4>
+          <p class="text-gray-600 text-sm">Continuously evolving to meet market needs</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+          </div>
+          <h4 class="font-bold text-navy-900 mb-2">Excellence</h4>
+          <p class="text-gray-600 text-sm">Striving for superior performance</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h4 class="font-bold text-navy-900 mb-2">Partnership</h4>
+          <p class="text-gray-600 text-sm">Building lasting relationships</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h4 class="font-bold text-navy-900 mb-2">Sustainability</h4>
+          <p class="text-gray-600 text-sm">Investing responsibly for long-term impact</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 mb-6">
+            <div class="w-10 h-10 bg-gradient-to-br from-gold-400 to-gold-500 rounded-lg flex items-center justify-center">
+              <span class="text-navy-900 font-bold text-xl">A</span>
+            </div>
+            <span class="text-xl font-bold">Alman Partners</span>
+          </a>
+          <p class="text-white/70 max-w-md mb-6">
+            A seasoned investment management firm dedicated to delivering innovative, sustainable, and client-focused financial solutions.
+          </p>
+          <p class="text-white/50 text-sm">Confidential © 2025</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-white/70">
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
+            <li><a href="expertise.html" class="hover:text-white transition">Expertise</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact Info</h4>
+          <ul class="space-y-3 text-white/70">
+            <li>Victoria Island, Lagos</li>
+            <li>+234 803 301 5718</li>
+            <li>almanpartnersltd@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
+        <p>Alman Partners Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+
+</body>
+</html>

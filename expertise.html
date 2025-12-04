@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expertise | Alman Partners Limited</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            primary: { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+            gold: { 400: '#facc15', 500: '#eab308', 600: '#ca8a04' },
+            navy: { 800: '#1e3a5f', 900: '#0f2744', 950: '#0a1929' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-gradient-to-br from-navy-800 to-primary-700 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">A</span>
+          </div>
+          <span class="text-xl font-bold text-navy-900">Alman Partners</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="about.html" class="text-gray-600 hover:text-navy-800 transition font-medium">About</a>
+          <a href="services.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Services</a>
+          <a href="expertise.html" class="text-navy-800 font-semibold transition">Expertise</a>
+          <a href="milestones.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Milestones</a>
+          <a href="contact.html" class="bg-navy-800 text-white px-6 py-2.5 rounded-full hover:bg-navy-900 transition font-medium">Contact Us</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="about.html" class="block text-gray-600 hover:text-navy-800 py-2">About</a>
+        <a href="services.html" class="block text-gray-600 hover:text-navy-800 py-2">Services</a>
+        <a href="expertise.html" class="block text-navy-800 font-semibold py-2">Expertise</a>
+        <a href="milestones.html" class="block text-gray-600 hover:text-navy-800 py-2">Milestones</a>
+        <a href="contact.html" class="block bg-navy-800 text-white px-6 py-2.5 rounded-full text-center">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Our Expertise</span>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mt-3">
+        Investment Capabilities
+      </h1>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        We offer a broad spectrum of investment strategies tailored to the unique objectives of our clients.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Expertise -->
+  <section class="py-20 lg:py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Equities</h3>
+          <p class="text-gray-600">Leveraging in-depth market research and analysis to identify growth opportunities and maximize shareholder value.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Fixed Income</h3>
+          <p class="text-gray-600">Providing stability and consistent returns through diversified bond and debt instruments.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Alternative Investments</h3>
+          <p class="text-gray-600">Delivering innovative solutions in private equity, hedge funds, commodities, and structured products.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Real Estate</h3>
+          <p class="text-gray-600">Creating long-term value through strategic real estate investments and property portfolio management.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-rose-500 to-rose-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Investment Management</h3>
+          <p class="text-gray-600">Discretionary portfolio management and comprehensive investment advisory services.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary-200 transition">
+          <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900 mb-3">Portfolio Management</h3>
+          <p class="text-gray-600">Customized portfolio solutions, strategic asset allocation, and comprehensive risk management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 mb-6">
+            <div class="w-10 h-10 bg-gradient-to-br from-gold-400 to-gold-500 rounded-lg flex items-center justify-center">
+              <span class="text-navy-900 font-bold text-xl">A</span>
+            </div>
+            <span class="text-xl font-bold">Alman Partners</span>
+          </a>
+          <p class="text-white/70 max-w-md mb-6">
+            A seasoned investment management firm dedicated to delivering innovative, sustainable, and client-focused financial solutions.
+          </p>
+          <p class="text-white/50 text-sm">Confidential © 2025</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-white/70">
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
+            <li><a href="expertise.html" class="hover:text-white transition">Expertise</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact Info</h4>
+          <ul class="space-y-3 text-white/70">
+            <li>Victoria Island, Lagos</li>
+            <li>+234 803 301 5718</li>
+            <li>almanpartnersltd@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
+        <p>Alman Partners Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+
+</body>
+</html>
