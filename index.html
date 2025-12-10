@@ -7,37 +7,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Updated font to Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
           },
           colors: {
-            primary: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
-            },
             gold: {
-              400: '#facc15',
-              500: '#eab308',
-              600: '#ca8a04',
+              300: '#d4b84a',
+              400: '#c29c26',
+              500: '#c29c26',
+              600: '#a68620',
             },
             navy: {
-              800: '#1e3a5f',
-              900: '#0f2744',
-              950: '#0a1929',
+              700: '#002850',
+              800: '#001c3b',
+              900: '#001c3b',
+              950: '#00152e',
+            },
+            // Secondary colors
+            emerald: {
+              400: '#3BB273',
+              500: '#118C4F',
+              600: '#046307',
+              700: '#014321',
+            },
+            slate: {
+              400: '#8fa3b8',
+              500: '#6b8299',
+              600: '#4a6378',
+              700: '#3d5266',
             }
           }
         }
@@ -47,7 +50,8 @@
   <style>
     html { scroll-behavior: smooth; }
     .hero-gradient {
-      background: linear-gradient(135deg, rgba(15, 39, 68, 0.95) 0%, rgba(30, 58, 95, 0.9) 50%, rgba(12, 74, 110, 0.85) 100%);
+      /* Updated gradient to use brand navy */
+      background: linear-gradient(135deg, rgba(0, 28, 59, 0.95) 0%, rgba(0, 40, 80, 0.9) 50%, rgba(0, 21, 46, 0.85) 100%);
     }
     .card-hover:hover {
       transform: translateY(-8px);
@@ -68,20 +72,19 @@
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
-        <a href="index.html" class="flex items-center gap-2">
-          <div class="w-10 h-10 bg-gradient-to-br from-navy-800 to-primary-700 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-xl">A</span>
-          </div>
-          <span class="text-xl font-bold text-navy-900">Alman Partners</span>
+        <!-- Replaced text logo with white background brand logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="./public/images/white-bg-logo.png" alt="Alman Partners Limited" class="h-[200px] w-auto">
         </a>
         <div class="hidden md:flex items-center gap-8">
           <a href="about.html" class="text-gray-600 hover:text-navy-800 transition font-medium">About</a>
           <a href="services.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Services</a>
           <a href="expertise.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Expertise</a>
           <a href="milestones.html" class="text-gray-600 hover:text-navy-800 transition font-medium">Milestones</a>
-          <a href="contact.html" class="bg-navy-800 text-white px-6 py-2.5 rounded-full hover:bg-navy-900 transition font-medium">Contact Us</a>
+          <!-- Updated button to gold accent -->
+          <a href="contact.html" class="bg-gold-400 text-navy-800 px-6 py-2.5 rounded-full hover:bg-gold-300 transition font-semibold">Contact Us</a>
         </div>
-        <button id="menuBtn" class="md:hidden p-2">
+        <button id="menuBtn" class="md:hidden p-2 text-navy-800">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -95,7 +98,7 @@
         <a href="services.html" class="block text-gray-600 hover:text-navy-800 py-2">Services</a>
         <a href="expertise.html" class="block text-gray-600 hover:text-navy-800 py-2">Expertise</a>
         <a href="milestones.html" class="block text-gray-600 hover:text-navy-800 py-2">Milestones</a>
-        <a href="contact.html" class="block bg-navy-800 text-white px-6 py-2.5 rounded-full text-center">Contact Us</a>
+        <a href="contact.html" class="block bg-gold-400 text-navy-800 px-6 py-2.5 rounded-full text-center font-semibold">Contact Us</a>
       </div>
     </div>
   </nav>
@@ -107,22 +110,25 @@
       <div class="hero-gradient absolute inset-0"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <!-- Updated badge colors -->
       <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8">
         <span class="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></span>
         <span class="text-white/90 text-sm font-medium">Trusted Investment Partner Since 2013</span>
       </div>
-      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
         Building Wealth,<br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-500">Securing Futures</span>
+        <!-- Updated gradient text to gold -->
+        <span class="text-gold-400">Securing Futures</span>
       </h1>
       <p class="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
         Delivering innovative, sustainable, and client-focused financial solutions with integrity, expertise, and performance.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="about.html" class="w-full sm:w-auto bg-white text-navy-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg">
+        <a href="about.html" class="w-full sm:w-auto bg-white text-navy-800 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg">
           Discover Our Story
         </a>
-        <a href="contact.html" class="w-full sm:w-auto border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">
+        <!-- Updated border to gold accent -->
+        <a href="contact.html" class="w-full sm:w-auto border-2 border-gold-400 text-white px-8 py-4 rounded-full font-semibold hover:bg-gold-400/10 transition">
           Get In Touch
         </a>
       </div>
@@ -138,16 +144,18 @@
   <section class="py-20 lg:py-32 relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=2000&q=80" alt="City skyline at night" class="w-full h-full object-cover">
+      <!-- Updated gradient to navy -->
       <div class="absolute inset-0 bg-gradient-to-r from-navy-900/95 to-navy-800/90"></div>
     </div>
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
         Ready to Grow Your Wealth?
       </h2>
       <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
         Partner with Alman Partners Limited and experience the difference of working with a trusted investment management firm dedicated to your financial success.
       </p>
-      <a href="contact.html" class="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-8 py-4 rounded-full font-semibold hover:bg-gold-400 transition shadow-lg">
+      <!-- Updated button to gold -->
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-gold-400 text-navy-800 px-8 py-4 rounded-full font-semibold hover:bg-gold-300 transition shadow-lg">
         Start Your Journey
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -157,15 +165,13 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-navy-900 text-white py-16">
+  <footer class="bg-navy-800 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">d
         <div class="md:col-span-2">
-          <a href="index.html" class="flex items-center gap-2 mb-6">
-            <div class="w-10 h-10 bg-gradient-to-br from-gold-400 to-gold-500 rounded-lg flex items-center justify-center">
-              <span class="text-navy-900 font-bold text-xl">A</span>
-            </div>
-            <span class="text-xl font-bold">Alman Partners</span>
+          <!-- Replaced text logo with navy background brand logo -->
+          <a href="index.html" class="flex items-center mb-6">
+            <img src="./public/images/navy-bg-logo.png" alt="Alman Partners Limited" class="h-[200px] w-auto">
           </a>
           <p class="text-white/70 max-w-md mb-6">
             A seasoned investment management firm dedicated to delivering innovative, sustainable, and client-focused financial solutions.
@@ -173,16 +179,16 @@
           <p class="text-white/50 text-sm">Confidential © 2025</p>
         </div>
         <div>
-          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <h4 class="font-semibold mb-4 text-gold-400">Quick Links</h4>
           <ul class="space-y-3 text-white/70">
-            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-            <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
-            <li><a href="expertise.html" class="hover:text-white transition">Expertise</a></li>
-            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+            <li><a href="about.html" class="hover:text-gold-400 transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-gold-400 transition">Our Services</a></li>
+            <li><a href="expertise.html" class="hover:text-gold-400 transition">Expertise</a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold mb-4">Contact Info</h4>
+          <h4 class="font-semibold mb-4 text-gold-400">Contact Info</h4>
           <ul class="space-y-3 text-white/70">
             <li>Victoria Island, Lagos</li>
             <li>+234 803 301 5718</li>
